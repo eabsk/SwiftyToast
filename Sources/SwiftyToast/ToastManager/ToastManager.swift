@@ -10,7 +10,7 @@ public class ToastManager {
     
     private init() {}
     
-    func showError(message: String, view: UIView, isDismissButtonEnabled: Bool = true) {
+    public func showError(message: String, view: UIView, isDismissButtonEnabled: Bool = true) {
         let errorHeader: ToastView? = ToastView()
         errorHeaders.forEach({
             hideBanner(errorHeader: $0)
@@ -63,7 +63,7 @@ public class ToastManager {
         }
     }
     
-    func hideBanner() {
+    public func hideBanner() {
         UIView.animate(withDuration: 0.5, animations: { [weak self] in
             self?.errorHeaders.forEach { view in
                 view?.alpha = 0
