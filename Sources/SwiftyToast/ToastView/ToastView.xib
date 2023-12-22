@@ -11,10 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToastView" customModule="SwiftyToast">
             <connections>
-                <outlet property="contentView" destination="iN0-l3-epB" id="l9K-T5-ysU"/>
-                <outlet property="dismissButton" destination="Sqo-xX-gFv" id="gDo-4w-p05"/>
-                <outlet property="errorLabel" destination="55H-RR-diC" id="1Wg-3o-MEd"/>
-                <outlet property="labelTrailingConstraints" destination="hjf-52-MIC" id="xiX-P8-G1C"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="qj6-VO-bCl"/>
+                <outlet property="dismissButton" destination="Sqo-xX-gFv" id="55T-Ah-sa0"/>
+                <outlet property="errorLabel" destination="55H-RR-diC" id="ToK-fz-dvt"/>
+                <outlet property="labelTrailingConstraints" destination="hjf-52-MIC" id="UOv-8V-DJ7"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -51,7 +51,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <action selector="dismissButtonAction:" destination="-1" eventType="touchUpInside" id="QMh-D7-jw2"/>
+                        <action selector="dismissButtonAction:" destination="-1" eventType="touchUpInside" id="0n4-bc-wD1"/>
                     </connections>
                 </button>
             </subviews>
