@@ -44,7 +44,7 @@ class ToastView: UIView {
     }
     
     private func commonInit() {
-        Bundle.main.loadNibNamed("ToastView", owner: self, options: nil)
+        Bundle(identifier: "ios.ioslam.SwiftyToast")?.loadNibNamed("ToastView", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = self.bounds
     }
