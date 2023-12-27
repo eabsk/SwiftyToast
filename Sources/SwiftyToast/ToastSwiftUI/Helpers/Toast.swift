@@ -35,11 +35,11 @@ fileprivate class PassThroughWindow: UIWindow {
     }
 }
 
-class Toast: ObservableObject {
-    static var shared: Toast = Toast()
+public class Toast: ObservableObject {
+    public static var shared: Toast = Toast()
     @Published var toasts: [ToastItem] = []
     
-    func present(title: String, symbol: String?,
+    public func present(title: String, symbol: String?,
                  tint: Color = .primary,
                  isUserInteractionEnabled: Bool = true,
                  isDismissible: Bool = false,
@@ -67,18 +67,17 @@ class Toast: ObservableObject {
     }
 }
 
-struct ToastItem: Identifiable {
-    let id: UUID = .init()
-    var title: String
-    var symbol: String?
-    var tint: Color
-    var isUserInteractionEnabled: Bool
-    var isDismissible: Bool
-    var timing: ToastTime = .medium
-    
+public struct ToastItem: Identifiable {
+    public let id: UUID = .init()
+    public var title: String
+    public var symbol: String?
+    public var tint: Color
+    public var isUserInteractionEnabled: Bool
+    public var isDismissible: Bool
+    public var timing: ToastTime = .medium
 }
 
-enum ToastTime: CGFloat {
+public enum ToastTime: CGFloat {
     case short = 1.0
     case medium = 2.0
     case long = 3.0
